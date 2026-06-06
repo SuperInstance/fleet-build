@@ -1,0 +1,8 @@
+/target
+*.swp
+*.swo
+*~
+.env
+credentials.*
+*.secret
+.fleet-build-state.json

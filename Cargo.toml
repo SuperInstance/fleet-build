@@ -1,0 +1,31 @@
+[package]
+name = "fleet-build"
+version = "0.1.0"
+edition = "2024"
+description = "Automated Rust crate build, test, fix, and push CLI for agent workflows"
+license = "MIT"
+repository = "https://github.com/SuperInstance/fleet-build"
+readme = "README.md"
+keywords = ["cli", "build", "automation", "cargo"]
+categories = ["command-line-utilities", "development-tools"]
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+anyhow = "1"
+colored = "2"
+glob = "0.3"
+chrono = "0.4"
+regex = "1"
+
+[dev-dependencies]
+tempfile = "3"
+
+[[bin]]
+name = "fleet-build"
+path = "src/main.rs"
+
+[lib]
+name = "fleet_build"
+path = "src/lib.rs"
