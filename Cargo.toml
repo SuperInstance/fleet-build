@@ -1,7 +1,7 @@
 [package]
 name = "fleet-build"
 version = "0.1.0"
-edition = "2024"
+edition = "2021"
 description = "Automated Rust crate build, test, fix, and push CLI for agent workflows"
 license = "MIT"
 repository = "https://github.com/SuperInstance/fleet-build"
